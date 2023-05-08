@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 				"json:test_results/cucumber_report.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
-		tags="@deleteItemInDB",
+		tags="@createItemWithDataTable",
 		publish=true
 		)
 public class TestRunner {

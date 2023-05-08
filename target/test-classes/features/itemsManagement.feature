@@ -41,7 +41,7 @@ Feature: Items Management
     Then I should be on item input page
     When I provide item information to the fields
     |MacBook Pro|180000|box|a good thing|
-    And I click Update Item button
+    And I click Save Item button
     Then The Item is added to the Item list table
 
   @updateItem
