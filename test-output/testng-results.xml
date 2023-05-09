@@ -2,20 +2,20 @@
 <testng-results ignored="3" total="5" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-06T18:02:56 CDT" name="Default suite" finished-at="2023-05-06T18:03:00 CDT" duration-ms="3585">
+  <suite started-at="2023-05-08T20:45:54 CDT" name="Default suite" finished-at="2023-05-08T20:45:58 CDT" duration-ms="3544">
     <groups>
     </groups>
-    <test started-at="2023-05-06T18:02:56 CDT" name="Default test" finished-at="2023-05-06T18:03:00 CDT" duration-ms="3585">
+    <test started-at="2023-05-08T20:45:54 CDT" name="Default test" finished-at="2023-05-08T20:45:58 CDT" duration-ms="3544">
       <class name="api_tests.CraterItems">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api_tests.CraterItems@2b91004a]" started-at="2023-05-06T18:02:56 CDT" name="setup" finished-at="2023-05-06T18:02:57 CDT" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api_tests.CraterItems@2b91004a]" started-at="2023-05-08T20:45:54 CDT" name="setup" finished-at="2023-05-08T20:45:55 CDT" duration-ms="814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:api_tests.CraterItems@2b91004a]" started-at="2023-05-06T18:02:57 CDT" name="login" finished-at="2023-05-06T18:03:00 CDT" duration-ms="2327" status="PASS">
+        <test-method signature="login()[pri:0, instance:api_tests.CraterItems@2b91004a]" started-at="2023-05-08T20:45:55 CDT" name="login" finished-at="2023-05-08T20:45:57 CDT" duration-ms="2259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createItem()[pri:0, instance:api_tests.CraterItems@2b91004a]" started-at="2023-05-06T18:03:00 CDT" name="createItem" finished-at="2023-05-06T18:03:00 CDT" depends-on-methods="api_tests.CraterItems.login" duration-ms="450" status="FAIL">
+        <test-method signature="createItem()[pri:0, instance:api_tests.CraterItems@2b91004a]" started-at="2023-05-08T20:45:57 CDT" name="createItem" finished-at="2023-05-08T20:45:58 CDT" depends-on-methods="api_tests.CraterItems.login" duration-ms="430" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
