@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 7,
+        "line": 6,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,36 +11,24 @@
         "steps": [
           {
             "result": {
-              "duration": 15304872000,
+              "duration": 10300647000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "As an entity user, I am logged in",
+            "line": 7,
+            "name": "As a user, I am on the login page",
             "match": {
-              "location": "step_definitions.ItemsManagement.as_an_entity_user_i_am_logged_in()"
+              "location": "step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5897914000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I navigate to Items tab",
-            "match": {
-              "location": "step_definitions.ItemsManagement.i_navigate_to_items_tab()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2023-05-09T16:00:38.252Z",
+        "start_timestamp": "2023-05-09T16:38:59.638Z",
         "before": [
           {
             "result": {
-              "duration": 3520614000,
+              "duration": 1945924000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +36,14 @@
             }
           }
         ],
-        "line": 39,
-        "name": "As a user, I am able to create an item or a service",
+        "line": 23,
+        "name": "Invalid password login",
         "description": "",
-        "id": "items-management;as-a-user--i-am-able-to-create-an-item-or-a-service",
+        "id": "crater-app-user-management;invalid-password-login",
         "after": [
           {
             "result": {
-              "duration": 82132000,
+              "duration": 75561000,
               "status": "passed"
             },
             "match": {
@@ -68,99 +56,74 @@
         "steps": [
           {
             "result": {
-              "duration": 127878000,
+              "duration": 2999671000,
               "status": "passed"
             },
-            "line": 40,
-            "name": "I click on the Add Item button",
+            "line": 24,
+            "name": "I enter valid username and invalid password",
             "match": {
-              "location": "step_definitions.ItemsManagement.i_click_on_the_add_item_button()"
+              "location": "step_definitions.UserManagementSteps.i_enter_valid_username_and_invalid_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 522645000,
+              "duration": 853742000,
               "status": "passed"
             },
-            "line": 41,
-            "name": "I should be on item input page",
+            "line": 25,
+            "name": "I click on login button",
             "match": {
-              "location": "step_definitions.ItemsManagement.i_should_be_on_item_input_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4190005000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I provide item information to the fields",
-            "match": {
-              "location": "step_definitions.ItemsManagement.i_provide_item_information_to_the_fields(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "MacBook Pro",
-                  "180000",
-                  "box",
-                  "a good thing"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 136693000,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "I click Save Item button",
-            "match": {
-              "location": "step_definitions.ItemsManagement.i_click_save_item_button()"
+              "location": "step_definitions.UserManagementSteps.i_click_on_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4628823000,
+              "duration": 722661000,
               "status": "passed"
             },
-            "line": 45,
-            "name": "The Item is added to the Item list table",
+            "line": 26,
+            "name": "I should see an error message",
             "match": {
-              "location": "step_definitions.ItemsManagement.the_item_is_added_to_the_item_list_table()"
+              "location": "step_definitions.UserManagementSteps.i_should_see_an_error_message()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51003000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should not be logged in",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_not_be_logged_in()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
+            "name": "@login"
+          },
+          {
             "name": "@regression"
           },
           {
-            "name": "@itemsTests"
-          },
-          {
-            "name": "@createItemWithDataTable"
-          },
-          {
-            "name": "@smoketest"
+            "name": "@invalidPasswordLogin"
           }
         ]
       }
     ],
-    "name": "Items Management",
-    "description": "",
-    "id": "items-management",
+    "name": "Crater app user management",
+    "description": "  Users with permissions should be able interact \n  with the application on successful login",
+    "id": "crater-app-user-management",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/itemsManagement.feature",
+    "uri": "file:src/test/resources/features/userManagement.feature",
     "tags": [
       {
-        "name": "@regression",
+        "name": "@login",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -168,11 +131,11 @@
         }
       },
       {
-        "name": "@itemsTests",
+        "name": "@regression",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 13
+          "column": 8
         }
       }
     ]

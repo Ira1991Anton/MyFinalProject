@@ -49,13 +49,19 @@ public class UserManagementSteps {
 	}
 	@Then("I should see an error message")
 	public void i_should_see_an_error_message() {
-		if (emailAddress.equals("") || passwordInput.equals("")) {
-			utils.waitUntilElementVisible(loginpage.fieldIsRequiredMessage);
-			Assert.assertTrue(loginpage.fieldIsRequiredMessage.isDisplayed());
-		} else {
-			utils.waitUntilElementVisible(loginpage.invalidLoginErrorMessage);
+		//first check option
 			Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
-		}
+			
+	//We can use an if else statement as well.
+			
+//			if(emailAddress.equals("invalid@primetechschool.com") || passwordInput.equals("primetech@school")) {
+//				utils.waitUntilElementVisible(loginpage.fieldIsRequiredMessage);
+//				Assert.assertTrue(loginpage.fieldIsRequiredMessage.isDisplayed());
+//			}else {
+//				utils.waitUntilElementVisible(loginpage.invalidLoginErrorMessage);
+//				Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
+//			}
+//		
 	}
 	@Then("I should not be logged in")
 	public void i_should_not_be_logged_in() {
