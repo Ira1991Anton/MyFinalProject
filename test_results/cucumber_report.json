@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10300647000,
+              "duration": 17644292000,
               "status": "passed"
             },
             "line": 7,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2023-05-09T16:38:59.638Z",
+        "start_timestamp": "2023-05-09T16:59:14.909Z",
         "before": [
           {
             "result": {
-              "duration": 1945924000,
+              "duration": 2060205000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 23,
-        "name": "Invalid password login",
+        "line": 16,
+        "name": "Invalid username login",
         "description": "",
-        "id": "crater-app-user-management;invalid-password-login",
+        "id": "crater-app-user-management;invalid-username-login",
         "after": [
           {
             "result": {
-              "duration": 75561000,
+              "duration": 82383000,
               "status": "passed"
             },
             "match": {
@@ -56,22 +56,22 @@
         "steps": [
           {
             "result": {
-              "duration": 2999671000,
+              "duration": 3128295000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I enter valid username and invalid password",
+            "line": 17,
+            "name": "I enter invalid username and valid password",
             "match": {
-              "location": "step_definitions.UserManagementSteps.i_enter_valid_username_and_invalid_password()"
+              "location": "step_definitions.UserManagementSteps.i_enter_invalid_username_and_valid_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 853742000,
+              "duration": 629804000,
               "status": "passed"
             },
-            "line": 25,
+            "line": 18,
             "name": "I click on login button",
             "match": {
               "location": "step_definitions.UserManagementSteps.i_click_on_login_button()"
@@ -80,10 +80,10 @@
           },
           {
             "result": {
-              "duration": 722661000,
+              "duration": 693368000,
               "status": "passed"
             },
-            "line": 26,
+            "line": 19,
             "name": "I should see an error message",
             "match": {
               "location": "step_definitions.UserManagementSteps.i_should_see_an_error_message()"
@@ -92,10 +92,10 @@
           },
           {
             "result": {
-              "duration": 51003000,
+              "duration": 68691000,
               "status": "passed"
             },
-            "line": 27,
+            "line": 20,
             "name": "I should not be logged in",
             "match": {
               "location": "step_definitions.UserManagementSteps.i_should_not_be_logged_in()"
@@ -111,7 +111,7 @@
             "name": "@regression"
           },
           {
-            "name": "@invalidPasswordLogin"
+            "name": "@invalidlogin"
           }
         ]
       }

@@ -56,8 +56,7 @@ public class UserManagementSteps {
 		Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
 
 		// We can use an if else statement as well.
-
-//			if(emailAddress.equals("invalid@primetechschool.com") || passwordInput.equals("primetech@school")) {
+//      if(emailAddress.equals("invalid@primetechschool.com") || passwordInput.equals("primetech@school")) {
 //				utils.waitUntilElementVisible(loginpage.fieldIsRequiredMessage);
 //				Assert.assertTrue(loginpage.fieldIsRequiredMessage.isDisplayed());
 //			}else {
