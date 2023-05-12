@@ -6,8 +6,11 @@
       <class name="api_tests.CraterItems">
         <methods>
           <include name="login"/>
+          <include name="getItem"/>
+          <include name="updateItem"/>
           <include name="setup"/>
           <include name="createItem"/>
+          <include name="deleteItem"/>
         </methods>
       </class> <!-- api_tests.CraterItems -->
     </classes>

@@ -48,22 +48,24 @@ public class UserManagementSteps {
 	public void i_enter_invalid_username_and_valid_password() {
 		utils.actionsSendKeys(loginpage.emailField, "invalid@primetechschool.com");
 		utils.actionsSendKeys(loginpage.passwordField, DataReader.getProperty("password"));
+		
 	}
 
 	@Then("I should see an error message")
-	public void i_should_see_an_error_message() {
+	public void i_should_see_an_error_message(){
 		// first check option
-		Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
-
+	//Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
+		loginpage = new LogInPage();
+		utils = new BrowserUtils();
 		// We can use an if else statement as well.
-//      if(emailAddress.equals("invalid@primetechschool.com") || passwordInput.equals("primetech@school")) {
-//				utils.waitUntilElementVisible(loginpage.fieldIsRequiredMessage);
-//				Assert.assertTrue(loginpage.fieldIsRequiredMessage.isDisplayed());
-//			}else {
-//				utils.waitUntilElementVisible(loginpage.invalidLoginErrorMessage);
-//				Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
-//			}
-//		
+      if(emailAddress.equals("") || passwordInput.equals("")) {
+    	  utils.waitUntilElementVisible(loginpage.fieldIsRequiredMessage);
+				Assert.assertTrue(loginpage.fieldIsRequiredMessage.isDisplayed());
+			}else {
+				utils.waitUntilElementVisible(loginpage.invalidLoginErrorMessage);
+				Assert.assertTrue(loginpage.invalidLoginErrorMessage.isDisplayed());
+			}
+		
 	}
 
 	@Then("I should not be logged in")
