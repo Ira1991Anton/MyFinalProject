@@ -31,7 +31,7 @@ public class LogInPage {
 	@FindBy (xpath = "//p[text()='These credentials do not match our records.']")
 	public WebElement invalidLoginErrorMessage;
 	
-	@FindBy (xpath = "//span[text()='Field is required']")
+	@FindBy (xpath = "//span[contains(text(),'Field is required')]")
 	public WebElement fieldIsRequiredMessage;
 	
 	public void login() {
